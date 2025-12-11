@@ -1,0 +1,96 @@
+/* General page style */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs and selects */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Make the Clear All button look slightly different */
+#clearBtn {
+    background: #ef4444;
+}
+
+#clearBtn:hover {
+    background: #dc2626;
+}
+
+/* Transactions container */
+#list {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    min-height: 80px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Each transaction line */
+.transaction {
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Income styling */
+.income {
+    color: green;
+}
+
+/* Expense styling */
+.expense {
+    color: red;
+}
+
+/* Balance styling */
+h3 {
+    margin-top: 15px;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title>Income & Expense Tracker</title> 
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="tracker.css">
+</head> 
+
+<body>  
+
+    <h2>Income & Expense Tracker</h2>  
+
+    <!-- Text entry: amount -->
+    <label>Amount:</label> 
+    <input type="number" id="amount" placeholder="Enter amount"> 
+
+    <!-- Text entry: description -->
+    <label>Description:</label>
+    <input type="text" id="description" placeholder="e.g. Salary, Coffee">
+
+    <!-- Selection: income/expense -->
+    <label>Type:</label> 
+    <select id="type"> 
+        <option value="income">Income</option> 
+        <option value="expense">Expense</option> 
+    </select>  
+
+    <!-- Button: add entry -->
+    <button id="addBtn" onclick="addEntry()">Add</button>  
+
+    <!-- Extra UI structure: filter select -->
+    <h3>Filter Transactions</h3>
+    <select id="filter">
+        <option value="all">Show All</option>
+        <option value="income">Only Income</option>
+        <option value="expense">Only Expenses</option>
+    </select>
+
+    <!-- Extra button: clear all (clickable area) -->
+    <button id="clearBtn">Clear All</button>
+
+    <h3>Transactions</h3> 
+    <div id="list"></div>  
+
+    <h3>Total Balance: $<span id="balance">0</span></h3>  
+
+    <!-- External JS -->
+    <script src="tracker.js"></script> 
+</body> 
+
+</html>
